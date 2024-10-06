@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
     'djgeojson',
+    'csvimport.app.CSVImportConf',
 ]
 
 MIDDLEWARE = [
@@ -82,6 +83,7 @@ DATABASES = {
     "default": {
         "ENGINE": "django.contrib.gis.db.backends.spatialite",
         "NAME": BASE_DIR / "db.sqlite3",
+
     }
 }
 

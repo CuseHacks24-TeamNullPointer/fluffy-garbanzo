@@ -19,6 +19,7 @@
   </head>
   <body>
     <div id="map"></div>
+    {{markers | json_script:"markers-data"}}
     <script defer src="{% static 'map.js' %}"></script>
   </body>
 </html>

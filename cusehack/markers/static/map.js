@@ -6,7 +6,10 @@ const map = L.map("map", { layers: [layer] });
 // map.fitWorld();
 const data = document.getElementById("markers-data")
 const markers = JSON.parse(data.textContent);
-let feature = L.geoJSON(markers).bindPopup(function (layer) {
-  return layer.feature.properties.name;
-}).addTo(map);
+let feature = L.geoJSON(markers)
+  .bindPopup(function (layer) {
+  return layer
+      .feature.properties.name;
+})
+  .addTo(map);
 map.fitBounds(feature.getBounds());
