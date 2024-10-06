@@ -1,4 +1,9 @@
-Django rest api for React native frontend, showing code violations in Syracuse
+Django app, showing code violations in Syracuse
+Was meant to provide an API for a React Native frontend
+
+Navigate to /map after starting webserver.
+
+Data from:
 
 https://data.syr.gov/datasets/syr::code-violations/about
 
